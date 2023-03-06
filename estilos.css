@@ -17,8 +17,8 @@ a {
 
 
 .inicioContainer .InicioContainerresp img {
- width: 320px;
- height: 320px;
+ width: 100vw;
+ height: auto;
  margin-bottom: 20px;
  margin-left: 0px;
 
@@ -57,9 +57,9 @@ a {
 }
 .tarjetaTerapias {
     display: inline-grid;
-    grid-template-rows: 70px 60px 400px;
+    grid-template-rows: 70px 60px 380px;
     justify-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .imgTarjeta {
     width: 50px;
@@ -132,6 +132,20 @@ a {
     border: 0px;
     font-size: large;
 }
+/*Videos mobile*/
+.videoSection {
+    display: flex;
+    justify-content: center;
+}
+.videoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.separadorVideos {
+    width: 100%;
+    height: 35px;
+}
 
 @media (min-width: 576px ) /*inicio 1920*/
 {
@@ -145,6 +159,7 @@ a {
         padding: 3px;
         margin: 0px;
         padding-top: 25px;
+        
     }
     .inicioContainer .InicioContainerresp img { 
         width: 500px;
@@ -173,6 +188,7 @@ a {
         padding-bottom: 0px;
     }
     .tarjetaTerapias {
+        grid-template-rows: 70px 60px 400px;
         width: 320px;
         margin-bottom: 0px;
     }
@@ -213,7 +229,7 @@ a {
     display: grid;
     grid-template-rows: 80px 60px;
     background-color: #112B3C;
-    width: 75%;
+    width: 100%;
     align-self: center;
    
 }
@@ -222,6 +238,7 @@ a {
     font-weight: 700;
     color: white;
     text-align: center;
+    font-size: 35px;
 
 }
 .btnTurno {
@@ -233,5 +250,19 @@ a {
     font-family: 'Poppins';
     font-weight: 500;
     border: 0px;
+}
+/*videos*/
+.separadorVideos {
+    height: 40px;
+}
+.videoSection {
+    display: flex;
+    justify-content: center;
+}
+.videoContainer {
+    width: 50%;
+}
+.video{
+    height: 500px;
 }
 }
