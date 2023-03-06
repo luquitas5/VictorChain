@@ -1,8 +1,12 @@
 /*inicio*/
 a {
     font-family: 'Open Sans';
-    font-size: larger;
+    font-size: large;
     text-align:center ;
+}
+.btnVolver {
+    font-family: 'Open Sans';
+    font-size: medium;
 }
 
 .inicioContainer {
@@ -24,7 +28,7 @@ a {
     align-self: center;
     padding: 0px;
 }
-.inicioContainer .InicioContainerresp p {
+.inicioContainer .InicioContainerresp .diviniciotext p {
     padding: 15px;
     font-size: 20px;
     font-weight: 400;
@@ -36,12 +40,10 @@ a {
     font-size: 30px;
     font-weight: 600;
     font-family: 'Montserrat';
-    margin-left: 20px;
+    margin-left: 16px;
 }
 
-.inicioContainer p a {
-    font-size: medium;
-}
+
 /*Terapias mobile*/
 .terapiasContainer {
     background-color: #205375;
@@ -78,15 +80,66 @@ a {
     text-align: center;
     font-family: 'Open Sans';
     color: white;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 100;
 }
+/*Consiste Terapia mobile*/
 
-
-
+.h1Consiste{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.imgConsiste {
+    width: 100vw;
+    margin-bottom: 30px;
+}
+.pConsiste {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*Solicitar un turno mobile*/
+.Solicitar {
+    background-color: #112B3C;
+}
+.solicitarContainer {
+    display: grid;
+    grid-template-rows: 90px 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.h2Solicitar{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+.btnTurno {
+    width: 200px;
+    height: 40px;
+    justify-self: center;
+    border-radius: 50px;
+    background-color: #F66B0E;
+    font-family: 'Poppins';
+    font-weight: 500;
+    border: 0px;
+    font-size: large;
+}
 
 @media (min-width: 576px ) /*inicio 1920*/
 {
+    .inicioContainer .InicioContainerresp .diviniciotext h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+
+    }
     .inicioContainer .InicioContainerresp {
         width: 75%;
         padding: 3px;
@@ -102,21 +155,83 @@ a {
         flex-direction: row;
     }
     
-    .inicioContainer .InicioContainerresp p {
+    .inicioContainer .InicioContainerresp .diviniciotext p {
+        padding-right: 0px;
+        padding-top: 0px;
         font-size: 21px;
     }
     .inicioContainer {
         padding: 0px;
     }
-    .inicioContainer .InicioContainerresp .diviniciotext h1 {
+    /*.inicioContainer .InicioContainerresp .diviniciotext h1 {
 
     }/*Terapias 1920*/
     .tarjetasContainer {
         justify-content:space-around;
         flex-direction: row;
-        padding-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
     .tarjetaTerapias {
         width: 320px;
+        margin-bottom: 0px;
     }
+/*Consiste Terapia 1920*/
+.consisteTerapia {
+    display: flex;
+    justify-content: center;
+}
+.consisteContainer {
+    width: 75%;
+}
+.imgConsiste {
+    width: 600px;
+    height: 450px;
+    display: inline-block;
+    vertical-align: top;
+}
+.divTextoConsiste {
+    width: 600px;
+    display: inline-block;
+}
+.pConsiste{
+    width: 100%; 
+    padding-right: 0px;}
+.h1Consiste {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+/*Solicitar un turno 1920*/
+.Solicitar {
+    background-color:white;
+    display: flex;
+    justify-content: center;
+}
+.solicitarContainer {
+    display: grid;
+    grid-template-rows: 80px 60px;
+    background-color: #112B3C;
+    width: 75%;
+    align-self: center;
+   
+}
+.h2Solicitar{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+}
+.btnTurno {
+    width: 200px;
+    height: 40px;
+    justify-self: center;
+    border-radius: 50px;
+    background-color: #F66B0E;
+    font-family: 'Poppins';
+    font-weight: 500;
+    border: 0px;
+}
 }
