@@ -1,3 +1,4 @@
+/*inicio*/
 a {
     font-family: 'Open Sans';
     font-size: larger;
@@ -5,48 +6,117 @@ a {
 }
 
 .inicioContainer {
-    padding: 20px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
 }
 
-.inicioContainer h1 {
-    padding-bottom: 20px;
+
+.inicioContainer .InicioContainerresp img {
+ width: 320px;
+ height: 320px;
+ margin-bottom: 20px;
+ margin-left: 0px;
+
 }
-
-.inicioContainer img {
- width: 90vw;
-
+.InicioContainerresp {
+    width: 100%;
+    align-self: center;
+    padding: 0px;
 }
-
-.inicioContainer p {
-    padding: 20px;
-    font-size: 24px;
+.inicioContainer .InicioContainerresp p {
+    padding: 15px;
+    font-size: 20px;
     font-weight: 400;
+    width: 100%;
+
 }
 
-.inicioContainer h1 {
-    font-size: 35px;
+.inicioContainer .InicioContainerresp .diviniciotext h1 {
+    font-size: 30px;
     font-weight: 600;
+    font-family: 'Montserrat';
+    margin-left: 20px;
 }
 
 .inicioContainer p a {
     font-size: medium;
 }
+/*Terapias mobile*/
+.terapiasContainer {
+    background-color: #205375;
+    display: flex;
+    flex-direction: column;
+}
+.tarjetasContainer{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.tarjetaTerapias {
+    display: inline-grid;
+    grid-template-rows: 70px 60px 400px;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+.imgTarjeta {
+    width: 50px;
+}
+.h2Tarjeta{
+    font-family: 'Montserrat';
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+}
+.h2Tarjeta2{
+    font-family: 'Montserrat';
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+}
+.pTarjeta {
+    text-align: center;
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
 
-@media (min-width: 576px ) {
-    .inicioContainer img { 
+
+
+
+@media (min-width: 576px ) /*inicio 1920*/
+{
+    .inicioContainer .InicioContainerresp {
+        width: 75%;
+        padding: 3px;
+        margin: 0px;
+        padding-top: 25px;
+    }
+    .inicioContainer .InicioContainerresp img { 
         width: 500px;
-        padding-left: 50px;
-
+        height: 500px;
     }
     .InicioContainerresp {
         display: flex;
         flex-direction: row;
     }
     
-    .inicioContainer p {
-        padding-left: 50px;
-        font-size: 26px;
+    .inicioContainer .InicioContainerresp p {
+        font-size: 21px;
+    }
+    .inicioContainer {
+        padding: 0px;
+    }
+    .inicioContainer .InicioContainerresp .diviniciotext h1 {
+
+    }/*Terapias 1920*/
+    .tarjetasContainer {
+        justify-content:space-around;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+    .tarjetaTerapias {
+        width: 320px;
     }
 }
